@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0]) throw `✳️ TikTok ka link yahan paste karein:\n *${usedPrefix + command}* tiktok url here...`;
+    if (!args[0]) throw `✳️ Past your tiktok video url here:\n *${usedPrefix + command}* tiktok url here...`;
     m.react('⏳'); 
 
     try {
@@ -50,8 +50,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }
 };
 
-handler.help = ['tiktok <link>'];
+handler.help = ['tiktok2 <link>'];
 handler.tags = ['downloader'];
-handler.command = ['tiktok', 'tk', 'ttdl', 'tk'];
+handler.command = ['tiktok2', 'tk2', 'ttdl2', 'tt2'];
 
 export default handler;
